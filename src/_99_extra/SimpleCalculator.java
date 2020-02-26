@@ -27,7 +27,28 @@ int b = Integer.parseInt(number2);
 	//    Method should create pop-up that shows equation and solution, eg. 45 + 25 = 70.
 	//    HINT: use 'static void add(int num1, num2) { ... }
 static void add(int num1, int num2 ) {
-	JOptionPane.showMessageDialog(null,   num1 + num2 );
-}
+	JOptionPane.showMessageDialog(null,num1 + num2);
 	// 4. Create similar methods for subtraction, multiplication and division.
+}
+static void subtract(int sub1, int sub2) {
+	JOptionPane.showMessageDialog(null, sub1 + sub2);
+}
+static void multiply(int mul1,int mul2) {
+	JOptionPane.showMessageDialog(null, mul1 + mul2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
