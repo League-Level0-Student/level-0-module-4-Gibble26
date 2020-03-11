@@ -15,7 +15,19 @@ int b = Integer.parseInt(number2);
 		int operation = JOptionPane.showOptionDialog(null, "What do you want to do to those numbers?", "poop lol rekt fart", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Add", "Subtract", "Multiply", "Divide" },
 				null);
-		add(a,b);
+		
+		if(operation == 0) {
+			add(a,b);
+		}
+		if(operation == 1) {
+			subtract(a,b);
+		}
+		if(operation == 2) {
+			multiply(a,b);
+		}
+		if(operation == 3) {
+			divide(a,b);
+		}
 
 		// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
 
@@ -31,14 +43,16 @@ static void add(int num1, int num2 ) {
 	// 4. Create similar methods for subtraction, multiplication and division.
 }
 static void subtract(int sub1, int sub2) {
-	JOptionPane.showMessageDialog(null, sub1 + sub2);
+	JOptionPane.showMessageDialog(null, sub1 - sub2);
 }
 static void multiply(int mul1,int mul2) {
-	JOptionPane.showMessageDialog(null, mul1 + mul2);
+	JOptionPane.showMessageDialog(null, mul1*mul2);
+}
+static void divide(int div1,int div2) {
+	JOptionPane.showMessageDialog(null, div1/div2);
 }
 
-
-
+ 
 
 
 
